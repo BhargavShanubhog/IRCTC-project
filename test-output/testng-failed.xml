@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="validFrom" value="hyderabad"/>
+    <parameter name="url" value="https://www.air.irctc.co.in/"/>
+    <parameter name="validTo" value="mumbai"/>
+    <classes>
+      <class name="Tests.FindValidation">
+        <methods>
+          <include name="antic"/>
+          <include name="ValidCredentials" invocation-numbers="0"/>
+          <include name="aerobic"/>
+        </methods>
+      </class> <!-- Tests.FindValidation -->
+      <class name="Tests.BasicValidation">
+        <methods>
+          <include name="aerobic"/>
+        </methods>
+      </class> <!-- Tests.BasicValidation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
